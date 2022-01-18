@@ -4,26 +4,48 @@
         <meta charset="utf-8">
         <title>Syed Hamza Azeem</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
+    <!-- Navigation -->
     <body>
         <div class="navbar">
-            <div class="navbar-item nav-menu-button">
-                <i class="fa fa-bars"></i>
+            <div class="navbar-item navbar-nav">
+                <ul>
+                    <li><a href=#about-section>About</a></li>
+                    <li><a href=#tools-section>Tools</a></li>
+                    <li><a href=#projects-section>Projects</a></li>
+                </ul>
+                <div class="navbar-nav-hamburger">
+                    <i class="fa fa-bars fa-lg"></i>
+                </div>
             </div>
 
-            <div class="navbar-item brand-name">
+            <div class="navbar-item navbar-brand">
                 Syed Hamza Azeem
             </div>
         </div>
-
+        <!-- Hero Section -->
         <div class="hero-wrapper">
-            <span>Intro</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi culpa odio mollitia vero neque tempore unde </p>
+                <div class="hero-intro">
+                    <span>About</span>
+                    <div>&nbsp</div>  <!-- line break/empty space-->
+                    <p>A software engineering professional with an avid interest in data engineering, 
+                        web backend and possessing an eye for visual design. <br>
+                        My major working areas are Python-based backend development, automation and data engineering toolsets.
+                        I also dabble with frontend technology stacks, notably the MERN stack.
+                    </p>
+                </div>
+                <div class="hero-img">
+                    <!-- <img src="images/self.jpg" alt="photo of myself"> -->
+                </div>
         </div>
 
-        <section class="about-wrapper">
+        <!-- about section -->
+        <section class="about-wrapper" id="about-section">
 
                 <div class="about-item">
                     <span>Education</span>
@@ -42,7 +64,8 @@
                 </div>
         </section>
 
-        <section class="tools-wrapper">
+        <!-- tools section -->
+        <section class="tools-wrapper" id="tools-section">
             <div class="tool-item">
                 <span>Python</span>
             </div>
@@ -56,10 +79,12 @@
             </div>
         </section>
 
-        <section class="projects-wrapper">
+        <!-- projects section -->
+        <section class="projects-wrapper" id="projects-section">
             projects go here
         </section>
 
+        <!-- footer -->
         <footer >
             footer goes here
         </footer>
