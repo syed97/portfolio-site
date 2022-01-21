@@ -141,12 +141,45 @@
 
 .about-item {
     padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
 }
 
-.about-item span {
+.about-item div.heading{
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     font-size: 2.5em;
+    /* border: 1px solid black; */
+}
+
+.about-item div.institutes {
+    /* border: 2px dotted black; */
+}
+
+.about-item div.inst-one {
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.about-item div.logo {
+    /* border: 1px solid black; */
+}
+
+.about-item img#inst-one-logo {
+    width: 70%;
+    /* border: 1px solid black; */
+}
+
+.about-item img#inst-two-logo {
+    width: 20%;
+    /* border: 1px solid black; */
+}
+
+.about-item div.info span{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 
@@ -154,6 +187,8 @@
 
 .tools-wrapper {
     height: 500px;
+    background-color: rgba(240, 245, 247, 0.9); /* Tint color */
+
 }
 
 
