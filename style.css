@@ -33,7 +33,7 @@
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 .navbar-nav ul li a:hover {
@@ -110,7 +110,6 @@
         max-width: 1400px;
         margin: auto;
     }
-
 }
 
 /* for smaller displays */
@@ -143,43 +142,57 @@
     padding: 40px;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid black; */
+    border: 1px solid black;
+    flex-wrap: wrap;
 }
 
-.about-item div.heading{
+div.heading{
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     font-size: 2.5em;
-    /* border: 1px solid black; */
+    border: 1px solid black;
+    /* flex-wrap: wrap; */
 }
 
-.about-item div.institutes {
-    /* border: 2px dotted black; */
+div.institutes {
+    flex-grow: 0.5;
+    flex-basis: 400px;
 }
 
-.about-item div.inst-one {
-    /* border: 1px solid black; */
+div.inst-one {
+    border: 1px solid black;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    /* flex-wrap: wrap; */
 }
 
-.about-item div.logo {
-    /* border: 1px solid black; */
+div.info {
+    /* margin-left: 5%; */
+    /* flex-grow: 2; */
 }
 
-.about-item img#inst-one-logo {
-    width: 70%;
-    /* border: 1px solid black; */
+/* images */
+img#inst-one-logo {
+    width: 150px;
+    height: 163px;
+    border: 1px solid black;
 }
 
-.about-item img#inst-two-logo {
-    width: 20%;
-    /* border: 1px solid black; */
-}
-
-.about-item div.info span{
+/* uni names and info */
+div.info span.inst-name{
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
+}
+
+div.info span.degree-name{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    display: block;
+    font-style: italic;
 }
 
 
