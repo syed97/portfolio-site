@@ -3,6 +3,13 @@
     /* border: 1px solid black; */
 }
 
+/* content-wrapper */
+.contenet-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* Navigation bar */
 
 .navbar {
@@ -66,9 +73,9 @@
 /* hero section */
 
 .hero-wrapper {
+    flex-basis: 500px;
     padding: 40px;
     position: relative;
-    height: 500px;
     background-color: rgba(240, 245, 247, 0.9); /* Tint color */
     background-blend-mode: multiply;
     background-size: cover;
@@ -79,10 +86,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.hero-intro {
-    margin-left: 6%;
 }
 
 .hero-img {
@@ -128,6 +131,10 @@
     .hero-intro {
         text-align: center;
     }
+    .hero-intro span {
+        display: block;
+        margin-top: 20px;
+    }
     .hero-intro p {
         width: 100%;
         text-align: center;
@@ -135,79 +142,36 @@
 }
 
 
-/* about section */
-
-.about-wrapper {
-    height: 500px;
-    background-color: rgba(222, 226, 228, 0.9);
-}
-
-.about-item {
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    /* border: 1px solid black; */
-    flex-wrap: wrap;
-}
-
-div.heading{
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    font-size: 2.5em;
-    /* border: 1px solid black; */
-    /* flex-wrap: wrap; */
-}
-
-div.institutes {
-    flex-grow: 0.5;
-    flex-basis: 400px;
-}
-
-div.inst-one {
-    border: 1px solid black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    /* flex-wrap: wrap; */
-}
-
-div.info {
-    border: 1px solid black;
-    /* margin-left: 5%; */
-    /* flex-grow: 2; */
-}
-
-/* images */
-img#inst-one-logo {
-    width: 150px;
-    height: 163px;
-    /* border: 1px solid black; */
-}
-
-/* uni names and info */
-div.info span.inst-name{
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-div.info span.degree-name{
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    display: block;
-    font-style: italic;
-}
-
-
 /* tools section */
 
 .tools-wrapper {
-    height: 500px;
-    background-color: rgba(240, 245, 247, 0.9); /* Tint color */
-
+    flex-basis: 500px;
+    background-color: rgba(222, 226, 228, 0.9); /* Tint color */
 }
+
+.tools-wrapper div.heading{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 4% 4%;
+}
+
+.tool-items-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+.tool-item {
+    flex-basis: 300px;
+}
+
+.tool-item img {
+    width: 100px;
+}
+
+
 
 
 

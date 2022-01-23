@@ -1,3 +1,4 @@
 make the sections/section divs responsive according to screen size (not 500px fixed width)
 change navbar items to match the page's contents (about -> education etc.)
 check out column flex for making the page repsonsive absed width 
+include favicon

@@ -1,0 +1,2 @@
+implemented flex-direction column on each section so that they can stretch vertically on smaller screens
+- content-wrapper encapsulates all the sections
