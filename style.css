@@ -57,6 +57,32 @@
     margin-right: 5%;;
 }
 
+.navbar-brand a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.hero-intro button {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 2px 2px #3b3b3b;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+
+    background-color: rgba(222, 226, 228, 0.9);
+
+    transition: all 0.2s;
+}
+
+.hero-intro button:hover {
+    background-color: #000000;
+    color: #ffffff
+}
+
 @media (min-width: 768px) {
     .navbar-nav-hamburger{
       display: none;
@@ -153,28 +179,127 @@
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     font-size: 2.5em;
-    padding: 4% 4%;
+    padding: 3% 3%;
 }
 
 .tool-items-container {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
     flex-wrap: wrap;
 }
 
 .tool-item {
-    flex-basis: 300px;
+    flex-basis: 250px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    /* background-color: #fff; */
+    /* border-radius: 11px;
+    box-shadow: 0 3px 10px; */
+    /* padding: 20px; */
+    /* margin: 10px; */
 }
 
 .tool-item img {
     width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
+}
+
+.tool-item img#rpi {
+    width: 80px;
+}
+
+.tool-item div {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.tool-item p {
+    font-family: 'Rubik', sans-serif;
+}
+
+/* for smaller displays */
+@media screen and (max-width: 768px) {
+    .tools-wrapper div.heading {
+        text-align: center;
+    }
+
+    .tool-items-container {
+        justify-content: center;
+    }
 }
 
 
 
 
+/* projects section */
+.projects-wrapper {
+    flex-basis: 500px;
+    background-color: rgba(240, 245, 247, 0.9); /* Tint color */
+}
 
+.projects-wrapper div.heading{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 3% 3%;
+}
+
+.project-item {
+    border: 1px solid black;
+    display: flex;
+}
+
+.project-item img {
+    width: 100px;
+    padding: 50px;
+    /* border: 1px solid black; */
+}
+
+.project-item div {
+    display: inline-block;
+    border: 1px solid black;
+    vertical-align: middle;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.project-item span {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.project-item p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+}
+
+.project-item-right-justified {
+    justify-content: flex-end;
+}
+
+.project-item-left-justified {
+    justify-content: flex-start;
+}
+
+/* for smaller displays */
+@media screen and (max-width: 768px) {
+    .projects-wrapper div.heading {
+        text-align: center;
+    }
+
+    .tool-items-container {
+        justify-content: center;
+    }
+}
 
 
 
