@@ -117,7 +117,6 @@
 .hero-intro button {
     margin-top: 30px;
     padding: 15px;
-    border: 1px solid black;
     /* border-radius: 50px; */
     box-shadow: 2px 2px #3b3b3b;
 
@@ -266,7 +265,6 @@
 .project-item img {
     width: 100px;
     padding: 50px;
-    /* border: 1px solid black; */
 }
 
 .project-item div {
@@ -285,6 +283,7 @@
 .project-item p {
     font-family: 'Rubik', sans-serif;
     font-size: 1em;
+    margin-top: 20px;
 }
 
 .project-item-right-justified {
@@ -306,6 +305,29 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+
+    .projects-wrapper {
+        padding-bottom: 20px;
+    }
+
+    .project-item span {
+        display: block;
+        text-align: center;
+    }
+
+    .project-item p {
+        text-align: center;
+    }
+
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /* contacts section */
 .contact-wrapper {
     flex-basis: 500px;
@@ -322,7 +344,6 @@
 .contact-wrapper div.content {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 50%; */
     padding-bottom: 100px;
     justify-content: space-between;
 }
@@ -330,7 +351,6 @@
 .content-socials {
     font-size: 1.2em;
     margin-left: 3%;
-    /* border: 1px solid black; */
 }
 
 
@@ -351,12 +371,6 @@
 
 .content-socials div.icons img {
     width: 1.5em;
-}
-
-.content-form {
-    /* border: 1px solid black; */
-    /* align-self: flex-end; */
-    /* flex-shrink: 2; */
 }
 
 form {
@@ -386,8 +400,6 @@ form {
     transform: translate(-50%);
     margin-top: 30px;
     padding: 15px;
-    /* border: 1px solid black; */
-    /* border-radius: 50px; */
     box-shadow: 2px 2px #3b3b3b;
 
     font-family: 'Rubik', sans-serif;
@@ -416,29 +428,34 @@ form {
 
     .contact-wrapper div.content {
         justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .content-socials {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-socials span {
+        display: inline-block;
+        align-self: center;
+    }
+
+    .icons {
+        /* border: 1px solid black; */
+        align-self: center;
     }
 
 }
 
 @media screen and (max-width: 500px) {
-    /* .form {
-        padding: 0;
-    } */
 
     .form-input-el {
         width: 100%;
     }
 
-    .content-socials {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .icons {
-        /* border: 1px solid black; */
-        align-self: center;
-    }
-    
 }
 
 
