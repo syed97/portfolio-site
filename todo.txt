@@ -3,3 +3,5 @@
 - check out column flex for making the page repsonsive absed width 
 - include favicon
 - could have set the max-width for each section/div to avoid setting the margins/padding
+
+- 

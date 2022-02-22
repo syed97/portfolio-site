@@ -95,8 +95,9 @@
 }
 
 .hero-img {
-    border: 5px solid black;
-    content: url(images/self2.jpg);
+    /* border: 5px solid black; */
+    border-radius: 2%;
+    content: url(images/self_round.jpg);
     filter: grayscale(10%);
     width: 30%;
 }
@@ -460,14 +461,17 @@ form {
 
 
 /* footer section */
+footer {
+    background-color: rgba(240, 245, 247, 0.9); /* Tint color */
+
+}
 
 footer > div {
-    /* padding: 30px; */
+    padding: 40px 0 40px 0;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
     margin-left: 50%;
     transform: translate(-50%);
+    
     /* border: 1px solid black; */
 }
 
