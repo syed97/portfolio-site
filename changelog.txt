@@ -1,2 +1,3 @@
 implemented flex-direction column on each section so that they can stretch vertically on smaller screens
 - content-wrapper encapsulates all the sections
+- remove extra padding on each section to account for activating content-wrapper flex in css

@@ -4,7 +4,7 @@
 }
 
 /* content-wrapper */
-.contenet-wrapper {
+.content-wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -49,6 +49,25 @@
     background-color:  rgba(240, 245, 247, 0.9);
     border-bottom: 2px solid black;
     transition: 0.5s;
+}
+
+/* hamburger menu styling */
+
+.navbar-nav-hamburger {
+    color: inherit;
+}
+
+.navbar-nav #myLinks {
+    display: none; 
+}
+
+.navbar-nav #myLinks{
+    padding-left: 0px;
+}
+
+.navbar-nav #myLinks > li{
+    /* border: 1px solid black; */
+    padding-top: 15px;
 }
 
 .navbar-brand {
@@ -179,7 +198,6 @@
 .tools-wrapper {
     flex-basis: 500px;
     background-color: rgba(222, 226, 228, 0.9); /* Tint color */
-    padding-bottom: 50px;
 }
 
 .tools-wrapper div.heading{
