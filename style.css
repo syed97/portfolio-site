@@ -193,70 +193,161 @@
 }
 
 
-/* tools section */
-
-.tools-wrapper {
+/* experience section */
+.exp-wrapper {
     flex-basis: 500px;
-    background-color: rgba(222, 226, 228, 0.9); /* Tint color */
+    background-color: rgba(222, 226, 228, 0.9); 
+    font-family: 'Rubik', sans-serif;
 }
 
-.tools-wrapper div.heading{
+.exp-wrapper div.heading{
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 3% 3%;
+}
+
+.exp-item {
+    display: flex;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    /* border: 1px solid black; */
+}
+
+.exp-item img {
+    width: 120px;
+    height: 120px;
+    padding: 50px;
+}
+
+.exp-item div {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.exp-item span {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.exp-item p, .exp-item ul {
+    font-size: 1em;
+    margin-top: 20px;
+    width: 80%;
+    /* border: 1px solid black; */
+}
+
+.exp-item-right-justified {
+    justify-content: flex-end;
+}
+
+.exp-item-left-justified {
+    justify-content: flex-start;
+}
+
+/* for smaller displays */
+@media screen and (max-width: 768px) {
+    .exp-wrapper div.heading {
+        text-align: center;
+    }
+
+    .exp-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    .exp-item p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* @media screen and (max-width: 500px) {
+
+    .exp-wrapper {
+        padding-bottom: 20px;
+    }
+
+    .exp-item span {
+        display: block;
+        text-align: center;
+    }
+
+    .exp-item p {
+        text-align: center;
+    }
+
+    .exp-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} */
+
+
+/* tech section */
+
+.tech-wrapper {
+    flex-basis: 500px;
+    background-color:  rgba(240, 245, 247, 0.9);
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 30px;
+}
+
+.tech-wrapper div.heading{
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     font-size: 2.5em;
     padding: 3% 3%;
 }
 
-.tool-items-container {
+.tech-items-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.tool-item {
+.tech-item {
     flex-basis: 250px;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    /* margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    /* background-color: #fff; */
-    /* border-radius: 11px;
-    box-shadow: 0 3px 10px; */
-    /* padding: 20px; */
-    /* margin: 10px; */
 }
 
-.tool-item img {
+.tech-item img {
     width: 100px;
     height: 100px;
     /* border: 1px solid black; */
 }
 
-.tool-item img#rpi {
+.tech-item img#rpi {
     width: 80px;
 }
 
-.tool-item div {
+.tech-item div {
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-.tool-item p {
+.tech-item p {
     font-family: 'Rubik', sans-serif;
 }
 
 /* for smaller displays */
 @media screen and (max-width: 768px) {
-    .tools-wrapper div.heading {
+    .tech-wrapper div.heading {
         text-align: center;
     }
 
-    .tool-items-container {
+    .tech-items-container {
         justify-content: center;
     }
 }
@@ -267,7 +358,7 @@
 /* projects section */
 .projects-wrapper {
     flex-basis: 500px;
-    background-color: rgba(240, 245, 247, 0.9); /* Tint color */
+    background-color: rgba(222, 226, 228, 0.9); 
 }
 
 .projects-wrapper div.heading{
@@ -347,10 +438,11 @@
     }
 }
 
+
 /* contacts section */
 .contact-wrapper {
     flex-basis: 500px;
-    background-color: rgba(222, 226, 228, 0.9); /* Tint color */
+    background-color: rgba(240, 245, 247, 0.9); /* Tint color */
     font-family: 'Rubik', sans-serif;
 }
 
@@ -480,8 +572,7 @@ form {
 
 /* footer section */
 footer {
-    background-color: rgba(240, 245, 247, 0.9); /* Tint color */
-
+    background-color: rgba(222, 226, 228, 0.9);
 }
 
 footer > div {
@@ -490,7 +581,6 @@ footer > div {
     margin-left: 50%;
     transform: translate(-50%);
     
-    /* border: 1px solid black; */
 }
 
 

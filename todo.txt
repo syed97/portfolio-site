@@ -4,4 +4,23 @@
 - include favicon
 - could have set the max-width for each section/div to avoid setting the margins/padding
 
-- 
+- tools ive used
+-- python
+-- html, css, js
+-- google cloud
+-- pandas, numpy, scikit
+-- c
+-- some database
+-- django
+-- rpi
+-- scrapy
+
+- areas worked with:
+-- data engineering + automation
+-- frontend dev + responsive
+-- cloud computing
+-- ML model building and automation
+-- iot & embedded
+-- scientific computing
+
+- credit to icons
