@@ -16,8 +16,8 @@
         <div class="navbar">
             <div class="navbar-item navbar-nav">
                 <ul>
-                    <li><a href=#about-section>About</a></li>
-                    <li><a href=#tools-section>Tools</a></li>
+                    <li><a href=#exp-section>Experience</a></li>
+                    <li><a href=#tech-section>Tools</a></li>
                     <li><a href=#projects-section>Projects</a></li>
                 </ul>
                 <a class="navbar-nav-hamburger" href="javascript:void(0);" onclick="show_nav()"> 
@@ -25,8 +25,8 @@
                 </a>
                 <!-- hamburger menu items - hidden by default -->
                 <ul id="myLinks">
-                    <li><a href=#about-section>About</a></li>
-                    <li><a href=#tools-section>Tools</a></li>
+                    <li><a href=#exp-section>Experience</a></li>
+                    <li><a href=#tech-section>Tools</a></li>
                     <li><a href=#projects-section>Projects</a></li>
                 </ul>
             </div>
@@ -42,10 +42,10 @@
                 <div class="hero-intro">
                     <span>About</span>
                     <div>&nbsp</div>  <!-- line break/empty space-->
-                    <p>Hi! I'm a software engineering professional with an avid interest in process automation, 
+                    <p>Hi! I'm a software engineering professional with a keen interest in process automation, 
                         fullstack development and possessing an eye for visual design. My major working areas are 
                         Python-based backend development, automation and data engineering with Google Cloud. I 
-                        also like to dabble with fullstack development and I'm looking to take this forward with Django
+                        also like to work with fullstack development and I'm taking this forward with Django
                         and the MERN stack.
                     </p>
                     <button type="button" class="contact-button">Contact Me</button>
@@ -57,7 +57,7 @@
 
 
             <!-- Experience section -->
-            <div class="exp-wrapper">
+            <div class="exp-wrapper" id="exp-section">
                 <div class="heading">
                     Areas I've worked in
                 </div>
@@ -128,14 +128,12 @@
                         </p>
                     </div>
                 </div>
-
             </div>
 
             
 
-
             <!-- tech section -->
-            <div class="tech-wrapper">
+            <div class="tech-wrapper" id="tech-section">
                 <div class="heading">
                     Tools I've used
                 </div>
@@ -192,44 +190,48 @@
             </div> <!-- end tech wrapper-->
 
 
+
             <!-- projects section -->
-            <div class="projects-wrapper">
+            <div class="projects-wrapper" id="projects-section">
                 <div class="heading">
                     Recent Projects
                 </div>
                 <div>&nbsp</div> 
                 
-                <div class="project-item project-item-left-justified">
-                    <img src="images/bootstrap.png" alt="Bootstrap logo">
-                    <div>
-                        <span>Human Activity Recognition using Ensemble Convolutional Neural Networks</span>
-                        <p>
-                           This project involved the development of a machine learning model to recognize an array of human activities
-                           from timeseries sensor data obtained from mobile phones. Common, daily physical activities such as walking, jogging, climbing,
-                           sitting etc. were included. The model used was an ensemble network of multiple convolutional neural networks. This approach was used
-                           in order to combine the best features of multiple models and in order to forego the heuristic development of features as with
-                           a more traditional model. The project resulted in a research publication which can be found here:
-                           <a href="https://ieeexplore.ieee.org/document/9400290">https://ieeexplore.ieee.org/document/9400290</a>
-                        </p>
+                <div class="projects-container">
+                    <div class="project-item project-item-left-justified">
+                        <img src="images/running.png" alt="Human activity recognition">
+                        <div>
+                            <span>Human Activity Recognition using Ensemble Convolutional Neural Networks</span>
+                            <p>
+                               This project involved the development of a machine learning model to recognize an array of human activities
+                               from timeseries sensor data obtained from mobile phones. Common, daily physical activities such as walking, jogging, climbing,
+                               sitting etc. were included. The model used was an ensemble network of multiple convolutional neural networks. This approach was used
+                               in order to combine the best features of multiple models and in order to forego the heuristic development of features as with
+                               a more traditional model. The project resulted in a research publication which can be found here:
+                               <a href="https://ieeexplore.ieee.org/document/9400290">https://ieeexplore.ieee.org/document/9400290</a>
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="project-item project-item-right-justified">
+                        <img src="images/cloud-storage.png" alt="Cloud functions and GTM">
+                        <div>
+                            <span>Google Tag Manager Data Logger</span>
+                            <p>
+                                One of the challenges encountered at work was debugging errors enocuntered in server-side 
+                                Google Tag Manager (GTM). GTM is a tool that allows the management of tags or snippets of code used
+                                in websites for marketing purposes. Sometimes, certain tags would not register and it was often difficult 
+                                for analysts to decipher the errors without any means of viewing the particulars of the requests which raised the
+                                errors. The solution implemented involved setting up a serverless Cloud Function that parses particular requests 
+                                with an extra token in the header. This token was compared against an existing one and subsequently, the request 
+                                data was logged into a Google Cloud Storage bucket. The technologies involved in this project included JavaScript, 
+                                Python, Google BigQuery and Google Cloud Functions.
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="project-item project-item-right-justified">
-                    <img src="images/bootstrap.png" alt="Bootstrap logo">
-                    <div>
-                        <span>Google Tag Manager Data Logger</span>
-                        <p>
-                            One of the challenges encountered at work was debugging errors enocuntered in server-side 
-                            Google Tag Manager (GTM). GTM is a tool that allows the management of tags or snippets of code used
-                            in websites for marketing purposes. Sometimes, certain tags would not register and it was often difficult 
-                            for analysts to decipher the errors without any means of viewing the particulars of the requests which raised the
-                            errors. The solution implemented involved setting up a serverless Cloud Function that parses particular requests 
-                            with an extra token in the header. This token was compared against an existing one and subsequently, the request 
-                            data was logged into a Google Cloud Storage bucket. The technologies involved in this project included JavaScript, 
-                            Python, Google BigQuery and Google Cloud Functions.
-                        </p>
-                    </div>
-                </div>
+                
             </div>
 
 
@@ -252,14 +254,12 @@
                         </div>
                     </div>
 
-                    <div class="content-form" id="contact-form">
-                        <form action="">
-                            <input type="text" id="name" name="name" placeholder="Your name" class="form-input-el"><br>
-                            <input type="email" id="email" name="email" placeholder="Your email" class="form-input-el"><br>
-                            <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message" class="form-input-el"></textarea>
-                        </form>
-                        <button type="submit" form="contact-form" value="Submit">Submit</button>
-                    </div>  
+                    <div class="content-email">
+                        <span id="email-text">Email me at</span>
+                        <br>
+                        <span id="email-value">syedhamza19@gmail.com</span>
+                    </div>
+
                 </div> <!-- end content-->
             </div> <!-- end contact-wrapper-->
 

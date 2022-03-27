@@ -24,3 +24,10 @@
 -- scientific computing
 
 - credit to icons
+
+Checks:
+1. Resizing
+2. Text wordings and grammar
+3. Adding links to the navbar items
+4. form action
+5. Make drop down menu for long text sections, on smaller screen sizes
